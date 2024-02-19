@@ -4,7 +4,10 @@ console.log(document.title);
 document.getElementById("gen-1").innerHTML = "Generasión 1 Pokimon";
 
 // Ejercicio 2
-
+const primeraGen = document.querySelectorAll("body > main > div:nth-child(6)")[0].children;
+for (let i = 0; i < primeraGen.length; i++) {
+    primeraGen[i].style.backgroundColor = "aliceblue";
+}
 
 // Ejercicio 3
 let URLactual = window.location.href;
@@ -16,8 +19,9 @@ let URLdomain = window.location.host;
 console.log(URLdomain);
 
 //Ejercicio 5
-let estoEsMain = document.getElementsByTagName("main");
-for (let i = 0; i < estoEsMain.length; i++) {
-    let imagenes = document.getElementsByClassName("src")[i];
-    console.log(imagenes);
-}
+document.querySelector("body > main").childNodes[11]
+    
+
+
+
+
